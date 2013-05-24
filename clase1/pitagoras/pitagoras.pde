@@ -3,6 +3,7 @@
 ** Temas: Trigonometria.
 ** by #90ED Media Art Studio. 
 */
+String texto = "La distancia es de: ";
 
 void setup(){
   size(800,600);
@@ -21,6 +22,10 @@ void draw(){
    ellipse(mouseX,mouseY,50,50);
    strokeWeight(2);
    line(width/2,height/2,mouseX,mouseY);
+   
+   int distancia = (int)dist(width/2,height/2,mouseX, mouseY);
+   text(texto + distancia, 10, 10);
+   
    
    
 }

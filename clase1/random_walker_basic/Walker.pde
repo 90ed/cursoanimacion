@@ -25,7 +25,7 @@ class Walker{
       y--; 
     }
     x = constrain(x,0,width-1);
-    x = constrain(y,0,height-1);
+    y = constrain(y,0,height-1);
  } 
   
   
